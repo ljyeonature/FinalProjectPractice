@@ -13,8 +13,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    axios.get("/getNow")
-      .then(res => setDate(res.data))
+    fetch("/getNow")
+      .then(res => res.text())
+      .then(data => setDate(data))
       .catch(err => console.log(err))
   }, []);
 
