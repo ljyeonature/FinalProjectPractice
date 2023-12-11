@@ -9,6 +9,7 @@ import com.test.service.GreetingService;
 
 import java.util.Date;
 
+import java.text.SimpleDateFormat;
 @RestController
 public class GreetingController {
     String result;
@@ -22,6 +23,12 @@ public class GreetingController {
     @RequestMapping(value="/getNow", method=RequestMethod.GET)
     public String getNow() {
         return "현재 시간은" + new Date() + "입니다";
+    }
+
+    @RequestMapping(value="/testGetNow", method=RequestMethod.GET)
+    public String testGetNow() {
+        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy년 MM월 dd일");
+        return String.format("현재 날짜는 %s", dateformat.format(new Date()));
     }
     
 }
