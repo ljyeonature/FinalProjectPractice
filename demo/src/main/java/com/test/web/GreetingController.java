@@ -27,8 +27,8 @@ public class GreetingController {
 
     @RequestMapping(value="/testGetNow", method=RequestMethod.GET)
     public String testGetNow() {
-        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy년 MM월 dd일");
-        return String.format("현재 날짜는 %s", dateformat.format(new Date()));
+        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy년 MM월 dd일 hh시 mm분");
+        return String.format("현재 날짜와 시간은 %s", dateformat.format(new Date()));
     }
     
 }
