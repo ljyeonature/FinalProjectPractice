@@ -7,5 +7,6 @@ public class test_BMH {
 		SpringApplication.run(DemoApplication.class, args);
 		// 화이팅!!
 		// 한번 더 화이팅!!
+		// 풀리퀘스트 권한 테스트!!
 	}
 }
