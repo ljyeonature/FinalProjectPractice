@@ -10,4 +10,7 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
+	// 박찬민
+	// 테스팅
+
 }
